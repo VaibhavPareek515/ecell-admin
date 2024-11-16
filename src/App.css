@@ -1,0 +1,254 @@
+@font-face {
+    font-family: my;
+    src: url("./assets/fonts/HelveticaNeueLight.otf");
+}
+
+@font-face {
+    font-family: myBold;
+    src: url("./assets/fonts/HelveticaNeueBold.otf");
+}
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: my;
+}
+
+
+.navbar {
+    position:sticky;
+    top: 0px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-box-shadow: 0px 10px 7px -7px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 10px 7px -7px rgba(0,0,0,0.4);
+    box-shadow: 0px 10px 7px -7px rgba(0,0,0,0.4); */
+}
+
+.navbar .navHolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #EEE5E9;
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+.navbar .logo {
+    font-size:1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar button {
+    border:none;
+    outline:none;
+    background-color:transparent;
+    font-size:1.5rem;
+    cursor:pointer;
+    /* background-color: #D64933; */
+    padding: 10px 15px;
+}
+
+.navbar img {
+    width: 50px;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.navbar .btnHolder {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navbar .routes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* color: slategrey; */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .routes div {
+    background-color: #2B303A;
+    color:white;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.PostForm {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.PostForm input {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .formHolder {
+    width: 60%;
+}
+
+.btn {
+    /* padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none; */
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.blogCon h1 {
+    margin: 20px 0;
+}
+
+.blogCon {
+    font-size: 1.1rem;
+}
+
+.blogCon img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.blogCon p {
+    padding:10px 0;
+    color: rgb(29, 29, 29);
+    letter-spacing: 2px;
+    line-height: 2.5ch;
+}
+
+.blogHolder {
+    /* width: 35vw; */
+    padding: 30px 0;
+    width: 100%;
+}
+
+.blog {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:958px) {
+    .blogHolder {
+        width: 80vw;
+    }
+
+    .footerHolder {
+        width: 80vw;
+    }
+
+    .form .formHolder {
+        width: 100%;
+    }
+
+    .navbar {
+        padding:20px;
+    }
+
+    .navbar .navHolder {
+        width:100%;
+        padding: 20px 25px;
+    }
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login .loginHolder {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login .inputHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login .inputHolder input {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: rgb(29, 29, 29);
+}
+
+.login .btnHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .btnHolder button {
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.login .inputHolder label {
+    padding: 5px;
+}
+
+.login .heading {
+    font-family: myBold;
+}
+
+.post {
+    border: 1px solid grey;
+    padding: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.post p {
+    color: rgb(29, 29, 29);
+}
